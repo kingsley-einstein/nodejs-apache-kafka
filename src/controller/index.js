@@ -3,7 +3,7 @@ const publish = (producer) => {
     try {
       const { body } = req;
       const result = await producer.send({
-        topic: 'test-topic',
+        topic: 'test-nodejs-topic',
         messages: [
           { value: JSON.stringify({ name: body.name, content: body.content }) }
         ]
