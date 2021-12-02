@@ -4,7 +4,9 @@ const publish = (producer) => {
       const { body } = req;
       const result = await producer.send({
         topic: 'test-topic',
-        messages: [{ value: JSON.stringify({ name: body.name, content: body.content }) }]
+        messages: [
+          { value: JSON.stringify({ name: body.name, content: body.content }) }
+        ]
       });
       return res.status(200).json({ result });
     } catch (error) {
@@ -12,3 +14,5 @@ const publish = (producer) => {
     }
   };
 };
+
+module.exports = { publish };
