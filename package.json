@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-apache-kafka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write **/**/*.{js,json}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingsley-einstein/nodejs-apache-kafka.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingsley-einstein/nodejs-apache-kafka/issues"
+  },
+  "homepage": "https://github.com/kingsley-einstein/nodejs-apache-kafka#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "kafkajs": "^1.15.0"
+  }
+}
